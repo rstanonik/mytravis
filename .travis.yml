@@ -6,4 +6,4 @@ env:
     secure: RLqLn0UngaQDTA2VfOG8+MGPO2ZPjLTrzpr1r3HJPCaxPHmxZ6zv0UHUWGmZtUKMPhNsvdAnylVWtabREfF9hFZWzCQWX1ADh/X3yJkSUc9wGjSpMuzn+v++6rDhScn1c18dnIvGrc8qs+ffszJ9Sf2puuIgOh6PXzjAYX0SNoqSEHuc+a2FQq0Ifb9079IYVypKUeDosq0C5ZkCD3xoCFr8xoPyTGMY2u3wEWbHFdGepSIFwqA0gMvph+mZpt1ZPmrAkketOF1zTaVJOnKYZBnjZ/Qj64KN+nzUgNZErg1L22jmgI+JU4xTFw+nFa49VmWlWC4rc31odicObBACGAgj1s6GTBifi/rM16WAmXWd8haATG8yDDcNZsmN1VPsfNPwEUkCNlWaL4AagrHImMugfV8+baYj30PFvmXnzr43YEojS7+n4InbSU/ea4kLI1ad2RoyzUnGIQuGnPBlRYIi6JXFqwX8QqNt+J+84VYgprThQ/fmKg1UjBx0pdKhE614AD54I+c5h78ZGIhgrUxBFuexDn7qY/M0t40xHP1XAwr8bWl/PNGut7DZ5U8YL2oBB4pRrDn2t6yTLk7rZKi7xt+aW+jkxxmVf0VpLD0wq1aNmacu+Qyls3wc+ZDXBETLMMZsc6AJ0TRCr8tix3MI7qg6KW++I+MwuOuoAyY=
 after_success:
   - openssl aes-256-cbc -k $DEPLOY_KEY -in config/conan2.enc -d -a -out config/conan2
-  - bundle exec cap pontos deploy
+  - cap pontos deploy
