@@ -8,7 +8,7 @@
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server 'pontos.ucsd.edu', user: 'conan2', roles: %w{db}
 set :ssh_options, {
-  keys: %w(/tmp/conan2),
+  keys: %w(config/conan2),
 }
 
 
